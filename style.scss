@@ -1,0 +1,173 @@
+html,
+body {
+  font-family: "Montserrat", sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background: radial-gradient(
+    circle,
+    rgba(175, 196, 174, 1) 0%,
+    rgba(104, 204, 191, 1) 89%,
+    rgba(94, 191, 178, 1) 100%
+  );
+}
+
+.header {
+  position: absolute;
+  height: 100%;
+  width: 10%;
+  background: rgba(255, 0, 0, 0.212);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  h3 {
+    font-size: 35px;
+    span {
+      color: goldenrod;
+    }
+  }
+}
+#startButton {
+  padding: 16px 32px;
+  background: black;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+#startButton:hover {
+  color: black;
+  background: rgb(192, 127, 127);
+}
+
+.modalBg {
+  background: rgba(0, 0, 0, 0.589);
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: visible;
+  opacity: 1;
+  transition: visibility 0s, opacity 0.5s;
+}
+.modalhide {
+  visibility: hidden;
+  opacity: 0;
+}
+.modal {
+  border-radius: 50px;
+  background: rgb(241, 241, 241);
+  height: 30%;
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  p b {
+    color: red;
+  }
+  h3 {
+    font-size: 35px;
+    span {
+      color: goldenrod;
+    }
+  }
+}
+
+.modalBgEnd {
+  visibility: hidden;
+  opacity: 0;
+}
+.modalshow {
+  visibility: visible;
+  opacity: 1;
+}
+
+.modalbtn {
+  padding: 16px 32px;
+  background: black;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.modalbtn:hover {
+  color: black;
+  background: gray;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.grid {
+  margin-top: 10px;
+  width: 200px;
+  height: 400px;
+  background: rgb(177, 177, 149);
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.grid div {
+  height: 20px;
+  width: 20px;
+  box-shadow: inset 0 0 0.5em rgba(23, 24, 22, 0.322);
+}
+.block3 {
+  box-shadow: none;
+  background: url(http://www.aniakubow.com/Tetris/images/green_block.png);
+}
+
+.tetromino {
+  background: blue;
+}
+
+.next {
+  margin-left: 20px;
+  display: flex;
+  width: 120px;
+  height: 120px;
+  justify-content: center;
+  align-items: center;
+  background: rgb(131, 101, 101);
+}
+.mini-grid {
+  width: 80px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.mini-grid div {
+  height: 20px;
+  width: 20px;
+}
+.mood {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+}
+
+.btn {
+  margin-top: 5px;
+  padding: 16px 32px;
+  background: rgb(138, 100, 100);
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.btn:hover {
+  background: rgb(163, 123, 123);
+  color: white;
+}
